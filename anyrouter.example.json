@@ -1,0 +1,41 @@
+{
+  "baseUrl": "https://your-relay.example.com",
+  "apiKey": "sk-xxxx",
+  "attribution": false,
+  "claudeVersion": "2.1.226",
+  "codexVersion": "0.146.0",
+  "models": [
+    {
+      "id": "claude-opus-5[1m]",
+      "name": "Claude Opus 5 (1M context)",
+      "reasoning": true,
+      "client": "claude",
+      "input": ["text"],
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "contextWindow": 1000000,
+      "maxTokens": 64000
+    },
+    {
+      "id": "gpt-5.1-codex",
+      "name": "GPT-5.1 Codex",
+      "reasoning": true,
+      "client": "codex",
+      "baseUrl": "https://another-relay.example.com",
+      "apiKey": "sk-yyyy",
+      "input": ["text"],
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "contextWindow": 400000,
+      "maxTokens": 128000
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Claude Code request headers (template): https://github.com/rays1d/pi-custom-header/blob/main/templates/claude-code.headers
+#
+# Source: real capture references/claude-code-header.txt
+# Dynamic lines use {{placeholders}}; static lines are verbatim.
+# Blacklisted headers (Authorization / Content-Length / Host / Connection /
+# Accept-Encoding) are intentionally omitted — pi and the HTTP layer own them.
+Accept: application/json
+Content-Type: application/json
+User-Agent: claude-cli/2.1.224 (external, cli)
+X-Claude-Code-Session-Id: {{session_id}}
+X-Stainless-Arch: x64
+X-Stainless-Lang: js
+X-Stainless-OS: Windows
+X-Stainless-Package-Version: 0.94.0
+X-Stainless-Retry-Count: 0
+X-Stainless-Runtime: node
+X-Stainless-Runtime-Version: v26.3.0
+X-Stainless-Timeout: 600
+anthropic-beta: claude-code-20250219,context-1m-2025-08-07,interleaved-thinking-2025-05-14,redact-thinking-2026-02-12,thinking-token-count-2026-05-13,context-management-2025-06-27,prompt-caching-scope-2026-01-05,mid-conversation-system-2026-04-07,advanced-tool-use-2025-11-20,effort-2025-11-24
+anthropic-dangerous-direct-browser-access: true
+anthropic-version: 2023-06-01
+x-app: cli

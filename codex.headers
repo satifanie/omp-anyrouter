@@ -1,0 +1,16 @@
+# Codex request headers (template): https://github.com/rays1d/pi-custom-header/blob/main/templates/codex.headers
+#
+# Source: real capture references/codex-header.txt
+# Dynamic lines use {{placeholders}}; static lines are verbatim.
+# Blacklisted headers (authorization / content-length / host) are intentionally
+# omitted — pi and the HTTP layer own them.
+x-codex-beta-features: remote_compaction_v2
+x-codex-window-id: {{window_id}}
+x-codex-turn-metadata: {{codex_turn_metadata}}
+x-client-request-id: {{request_id}}
+session-id: {{session_id}}
+thread-id: {{session_id}}
+accept: text/event-stream
+content-type: application/json
+originator: codex-tui
+user-agent: codex-tui/0.147.0 (Windows 10.0.26200; x86_64) WindowsTerminal (codex-tui; 0.147.0)
