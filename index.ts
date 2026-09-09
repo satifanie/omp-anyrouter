@@ -101,7 +101,7 @@ const DEBUG_DIR =
 let debugDirReady = false
 let debugSeq = 0
 // Claude Code CLI 指纹。官方 UA 形如 claude-cli/2.1.226 (external, cli)。
-const DEFAULT_CLAUDE_CODE_VERSION = "2.1.226"
+const DEFAULT_CLAUDE_CODE_VERSION = "2.1.265"
 // UA 里的入口标识，必须与归属标识块的 cc_entrypoint 一致
 const CLAUDE_CODE_ENTRYPOINT = "cli"
 // 归属标识块的 cc_version 是 <版本>.<构建号>
@@ -116,9 +116,9 @@ const ANTHROPIC_BETA =
 const CLAUDE_CONFIG_PATH = join(homedir(), ".claude.json")
 
 // Codex CLI 指纹。installation_id 每进程一个，与真实 codex-tui 行为一致。
-const DEFAULT_CODEX_VERSION = "0.146.0"
+const DEFAULT_CODEX_VERSION = "0.153.4"
 const CODEX_ORIGINATOR = "codex-tui"
-const CODEX_OS = "Mac OS 26.6"
+const CODEX_OS = "Mac OS 26.6.2"
 const CODEX_ARCH = "arm64"
 const CODEX_TERMINAL = "ghostty/1.3.1"
 const CODEX_INSTALLATION_ID = randomUUID()

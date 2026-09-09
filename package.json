@@ -1,6 +1,6 @@
 {
   "name": "omp-anyrouter",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": false,
   "type": "module",
   "description": "oh-my-pi extension that proxies models through AnyRouter-style relays by emulating native Claude Code / Codex CLI requests",
